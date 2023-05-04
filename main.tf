@@ -4,7 +4,7 @@ locals {
 
 data "archive_file" "lambda" {
   type        = "zip"
-  source_file = "watcher.py"
+  source_file = "${path.module}/watcher.py"
   output_path = local.lambda_zip_file
 }
 
