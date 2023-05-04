@@ -1,5 +1,5 @@
 locals {
-  lambda_zip_file = "lambda.zip"
+  lambda_zip_file = "${path.module}/lambda.zip"
 }
 
 data "archive_file" "lambda" {
